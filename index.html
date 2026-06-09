@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio AI - Gusti Achmad Reza Anana</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f172a,#1e293b,#334155);
+    color:white;
+    min-height:100vh;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+    color:#cbd5e1;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:25px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.profile{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.profile-text{
+    flex:1;
+}
+
+.profile-text h2{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:linear-gradient(45deg,#38bdf8,#06b6d4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:70px;
+    font-weight:bold;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:15px;
+}
+
+.feature h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+    color:#cbd5e1;
+}
+
+button{
+    background:#38bdf8;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+    margin-top:15px;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0ea5e9;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Artificial Intelligence</h1>
+    <p>Teknologi Masa Depan dalam Kehidupan Sehari-hari</p>
+</header>
+
+<div class="container">
+
+    <div class="card profile">
+        <div class="profile-text">
+            <h2>Profil Mahasiswa</h2>
+            <p><strong>Nama :</strong> Gusti Achmad Reza Anana</p>
+            <p><strong>NPM :</strong> 2410010213</p>
+            <p><strong>Program Studi :</strong> Informatika</p>
+
+            <button onclick="pesan()">
+                Klik Saya
+            </button>
+        </div>
+
+        <div class="profile-img">
+            G
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 style="margin-bottom:20px;">Pemanfaatan AI</h2>
+
+        <div class="grid">
+
+            <div class="feature">
+                <h3>📱 Smartphone</h3>
+                <p>AI digunakan untuk kamera pintar, pengenalan wajah, dan asisten virtual.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🎬 Media Sosial</h3>
+                <p>Memberikan rekomendasi konten sesuai minat pengguna.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🛒 E-Commerce</h3>
+                <p>Membantu memberikan rekomendasi produk yang relevan.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🏥 Kesehatan</h3>
+                <p>Membantu analisis data medis dan deteksi penyakit.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🚗 Transportasi</h3>
+                <p>Digunakan untuk navigasi cerdas dan kendaraan otonom.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🎓 Pendidikan</h3>
+                <p>Mendukung pembelajaran adaptif dan asisten belajar digital.</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 | Dibuat oleh Gusti Achmad Reza Anana - 2410010213</p>
+</footer>
+
+<script>
+function pesan(){
+    alert("Halo! Selamat datang di website AI milik Gusti Achmad Reza Anana.");
+}
+</script>
+
+</body>
+</html>
