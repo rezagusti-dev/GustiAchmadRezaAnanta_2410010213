@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio AI - Gusti Achmad Reza Anana</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#111827;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 50px;
+}
+
+.hero-text{
+    width:55%;
+}
+
+.hero-text h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text p{
+    font-size:18px;
+    margin-bottom:15px;
+    color:#d1d5db;
+}
+
+.btn{
+    padding:12px 25px;
+    border:none;
+    background:#38bdf8;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+.hero-image{
+    width:40%;
+    text-align:center;
+}
+
+.hero-image img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+}
+
+/* Card */
+.section{
+    padding:50px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    margin-top:30px;
+}
+
+/* Responsive */
+@media screen and (max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:10px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text,
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-image{
+        margin-bottom:30px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Gusti Portfolio</div>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profil</a></li>
+        <li><a href="#">AI</a></li>
+        <li><a href="#">Kontak</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-text">
+        <h1>Halo, Saya <span>Gusti Achmad Reza Anana</span></h1>
+
+        <p>Mahasiswa Informatika yang tertarik pada teknologi AI dan Web Development.</p>
+
+        <p><strong>NPM:</strong> 2410010213</p>
+
+        <button class="btn" onclick="welcome()">
+            Selamat Datang
+        </button>
+    </div>
+
+    <div class="hero-image">
+
+        <!-- Ganti dengan foto kucing milikmu -->
+        <img src="kucing.jpg" alt="Foto Kucing">
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Pemanfaatan Artificial Intelligence</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📱 Smartphone</h3>
+            <p>Kamera pintar, Face Unlock, dan asisten virtual.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎬 Media Sosial</h3>
+            <p>Rekomendasi video dan konten sesuai minat pengguna.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛒 E-Commerce</h3>
+            <p>Sistem rekomendasi produk secara otomatis.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏥 Kesehatan</h3>
+            <p>Membantu diagnosis dan analisis data medis.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚗 Transportasi</h3>
+            <p>Navigasi pintar dan prediksi kemacetan.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎓 Pendidikan</h3>
+            <p>Asisten belajar digital berbasis AI.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <h3>Gusti Achmad Reza Anana - 2410010213</h3>
+</footer>
+
+<script>
+function welcome() {
+    alert("Selamat datang di Website Portfolio Gusti Achmad Reza Anana");
+}
+</script>
+
+</body>
+</html>
